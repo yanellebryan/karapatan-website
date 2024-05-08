@@ -105,53 +105,60 @@
         <!-- Page Header End -->
         
         
-        <!-- Donate Start -->
-        <div class="container">
-            <div class="donate" data-parallax="scroll" data-image-src="img/donate.jpg">
-                <div class="row align-items-center">
-                    <div class="col-lg-7">
-                        <div class="donate-content">
-                            <div class="section-header">
-                                <p>Donate Now</p>
-                                <h2>Let's Donate Now to Support KARAPATAN</h2>
-                            </div>
-                            <div class="donate-text">
-                                <p>
-                                    Let's empower those in need for a brighter future. Your contribution can make a real difference in advancing human rights and improving lives. Join us in our mission to defend and uphold the rights and dignity of individuals and communities across the Philippines. Together, we can build a society where justice and equality thrive.
-                                </p>
-                            </div>
-                        </div>
+      <!-- Donate Start -->
+<div class="container">
+    <div class="donate" data-parallax="scroll" data-image-src="img/donate.jpg">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <div class="donate-content">
+                    <div class="section-header">
+                        <p>Donate Now</p>
+                        <h2>Let's Donate Now to Support KARAPATAN</h2>
                     </div>
-                    <div class="col-lg-5">
-                        <div class="donate-form">
-                            <form>
-                                <div class="control-group">
-                                    <input type="text" class="form-control" placeholder="Name" required="required" />
-                                </div>
-                                <div class="control-group">
-                                    <input type="email" class="form-control" placeholder="Email" required="required" />
-                                </div>
-                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-custom active">
-                                        <input type="radio" name="options" checked> ₱100
-                                    </label>
-                                    <label class="btn btn-custom">
-                                        <input type="radio" name="options"> ₱500
-                                    </label>
-                                    <label class="btn btn-custom">
-                                        <input type="radio" name="options"> ₱1000
-                                    </label>
-                                </div>
-                                <div>
-                                    <button class="btn btn-custom" type="submit">Donate Now</button>
-                                </div>
-                            </form>
-                        </div>
+                    <div class="donate-text">
+                        <p>
+                            Let's empower those in need for a brighter future. Your contribution can make a real difference in advancing human rights and improving lives. Join us in our mission to defend and uphold the rights and dignity of individuals and communities across the Philippines. Together, we can build a society where justice and equality thrive.
+                        </p>
                     </div>
                 </div>
             </div>
+            <div class="col-lg-5">
+                <div class="donate-form">
+                    <form>
+                        <div class="control-group">
+                            <input type="text" class="form-control" placeholder="Name" required="required" />
+                        </div>
+                        <div class="control-group">
+                            <input type="email" class="form-control" placeholder="Email" required="required" />
+                        </div>
+                        <div class="control-group">
+                            <textarea class="form-control" placeholder="Message (optional)"></textarea>
+                        </div>
+                        <div class="btn-group btn-group-toggle payment-toggle" data-toggle="buttons">
+                            <label class="btn btn-custom active">
+                                <input type="radio" name="payment-option" value="card" checked> Card
+                            </label>
+                            <label class="btn btn-custom">
+                                <input type="radio" name="payment-option" value="paypal"> PayPal
+                            </label>
+                        </div>
+                        <div>
+                            <button class="btn btn-custom" type="submit">Donate Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <!-- Donate End -->
+    </div>
+</div>
+<!-- Donate End -->
+
+<!-- Floating Payment Selection Button -->
+<div class="payment-selection">
+    <button class="btn btn-custom payment-button" data-toggle="tooltip" data-placement="top" title="Select Payment Method">
+        <i class="fas fa-money-bill-alt"></i>
+    </button>
+</div>
 
 
         <!-- Footer Start -->
