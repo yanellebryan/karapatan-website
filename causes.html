@@ -125,8 +125,7 @@
                         </div>
                         <div class="service-text">
                             <h3>URGENT APPEAL FOR ACTION FOR THE RELEASE OF GERARDO DELA PEÑA</h3>
-                       <a href= "#" > Read More</a>
-                        </div>
+<a                     href="urgent_appeal_1.html" class="read-more-link"> Read More</a>                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -190,7 +189,21 @@
         </div>
     </div>
         <!-- Service End -->
-        
+        <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const readMoreLinks = document.querySelectorAll('.read-more-link');
+        readMoreLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const url = this.getAttribute('href');
+                // Use pushState to change URL without page refresh
+                history.pushState(null, null, url);
+                // Redirect to the new page
+                window.location.href = url;
+            });
+        });
+    });
+</script>
         <!-- Causes Start -->
         <div class="causes">
             <div class="container">
