@@ -1275,7 +1275,7 @@ a:focus {
 
 .volunteer .volunteer-form .form-control:-ms-input-placeholder,
 .volunteer .volunteer-form .form-control::-ms-input-placeholder {
-    color: #ffffff;
+    color: #000000;
 }
 
 .volunteer .volunteer-form .btn.btn-custom {
