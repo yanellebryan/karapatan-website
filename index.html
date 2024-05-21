@@ -103,7 +103,7 @@
 
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav ml-auto">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="causes.html" class="nav-item nav-link">Archives</a>
                     <a href="event.html" class="nav-item nav-link">Campaigns</a>
@@ -118,11 +118,11 @@
                             <a href="volunteer.html" class="dropdown-item">Become A Volunteer</a>
                         </div>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="contact.html" class="nav-item nav-link active">Contact</a>
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
     <!-- Nav Bar End -->
 
     <!-- JavaScript Libraries -->
@@ -720,6 +720,13 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.dropdown-toggle').on('click', function() {
+                $(this).next('.dropdown-menu').toggle();
+            });
+        });
+    </script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
